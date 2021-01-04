@@ -36,6 +36,12 @@ cat id_ed25519.pub >> authorized_keys
 ./setup.sh
 ````
 
+### 4. Login ssh
+
+```
+ssh tmux_login@{your ip} -p 10000
+```
+
 
 
 tmux_sshd_container
