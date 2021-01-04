@@ -6,7 +6,7 @@ You can share your tmux session with the guests as **a readonly session** using 
 * Host's Socket: /tmp/tmux_shared_session/tmux_shared_sock
 * Host's Session: tmux_shared_session
 
-## Required
+## Requirement
 
 * docker
 * tmux
