@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y openssh-server tmux
 RUN mkdir /var/run/sshd
 RUN echo "Passwordauthentication no" >> /etc/ssh/sshd_config
 RUN echo "Match User tmux_login" >> /etc/ssh/sshd_config
-RUN echo "  ForceCommand /usr/bin/tmux -S /tmp/tmux_shared_sock/tmux_shared_sock attach -t tmux_shared_sock -r" >> /etc/ssh/sshd_config
+RUN echo "  ForceCommand /usr/bin/tmux -S /tmp/tmux_shared_sock/tmux_shared_sock attach -t tmux_shared_session -r" >> /etc/ssh/sshd_config
 RUN mkdir /tmp/tmux_shared_sock
 RUN chmod 777 /tmp/tmux_shared_sock
 RUN useradd -m -s /bin/bash -U tmux_login 
