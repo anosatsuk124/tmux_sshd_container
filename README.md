@@ -18,7 +18,7 @@ You can share your tmux session with the guests as **a readonly session** using 
 ```
 sudo mkdir /tmp/tmux_shared_session
 sudo chmod 777 /tmp/tmux_shared_session
-tmux -S /tmp/tmux_share_sock new -s tmux_shared_session
+tmux -S /tmp/tmux_shared_sock new -s tmux_shared_session
 ```
 
 ### 2. Setup the authorized_keys.
